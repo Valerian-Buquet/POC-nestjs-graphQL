@@ -3,10 +3,10 @@ services:
   postgres:
     image: postgres:13
     hostname: postgres
-    container_name: neko-social-postgres
+    container_name: poc-nestjs-graphql
     restart: always
     ports:
-      - 5432:5432
+      - 5431:5432
     env_file:
       - database.env
     volumes:
