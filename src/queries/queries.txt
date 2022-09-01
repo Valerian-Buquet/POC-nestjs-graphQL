@@ -1,0 +1,12 @@
+query getAllArticles {
+  getArticles(take: 3, skip: 0, sortBy: { title: ASC}) {
+    totalCount
+    nodes {
+      id
+      title
+      description
+      createdAt
+      updatedAt
+    }
+  }
+} # Write your query or mutation here

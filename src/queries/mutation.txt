@@ -1,0 +1,27 @@
+mutation articleCreate {
+  articleCreate(input: { title: "Hello", description: "Description" }) {
+    article {
+      id
+      title
+      description
+    }
+  }
+}
+
+
+mutation articleUpdate {
+  articleUpdate(id: "c8fb98cb-2bf2-436d-a426-6199080383c6" , input: { title: "Hello modifié", description: "Description modifié" }) {
+    article {
+      id
+      title
+      description
+    }
+  }
+}
+
+
+mutation articleDelete {
+  articleDelete(id: "c8fb98cb-2bf2-436d-a426-6199080383c6") {
+    id
+  }
+}
