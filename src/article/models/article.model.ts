@@ -1,5 +1,5 @@
 import { Field, ObjectType } from '@nestjs/graphql';
-import { BaseModel } from 'src/building-blocks/models/baseModel.model';
+import { BaseModel } from '../../building-blocks/models/baseModel.model';
 import { Column, Entity } from 'typeorm';
 
 @Entity()

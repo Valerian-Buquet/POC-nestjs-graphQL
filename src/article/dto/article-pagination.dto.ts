@@ -4,7 +4,7 @@ import {
   PaginationArgs,
   PaginationSortBy,
   SortDirection,
-} from 'src/building-blocks/dto/pagination.dto';
+} from '../../building-blocks/dto/pagination.dto';
 import { Article } from '../models/article.model';
 
 @InputType()
