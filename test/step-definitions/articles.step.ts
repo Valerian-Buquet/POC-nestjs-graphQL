@@ -2,9 +2,8 @@ import { binding, given, then, when, before } from 'cucumber-tsflow';
 import { assert } from 'chai';
 import { Test, TestingModule } from '@nestjs/testing';
 import { AppModule } from '../../src/app.module';
-import { INestApplication } from '@nestjs/common';
+
 import * as request from 'supertest';
-import { url } from 'inspector';
 
 class Context {
   public app;
@@ -40,8 +39,6 @@ export class HelloWorldSteps {
 
   @when('i post the graphql request')
   public async callToGraphql() {
-    console.log('url : ', this.url);
-    console.log('body : ', this.body);
     return (this.context.response = await request(
       this.context.app.getHttpServer(),
     )

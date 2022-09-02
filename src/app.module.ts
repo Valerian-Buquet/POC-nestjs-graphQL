@@ -28,6 +28,7 @@ import { ArticleModule } from './article/article.module';
         database: configService.get('DATABASE_DB'),
         entities: [join(__dirname, '**', '*.model.{ts,js}')],
         synchronize: true,
+        keepConnectionAlive: true,
       }),
     }),
     ArticleModule,
